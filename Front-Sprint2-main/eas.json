@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "version": ">= 16.6.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "node": "18.18.2",
+      "env": {
+        "EXPO_IGNORE_PEER_DEPENDENCIES": "true"
+      }
+    },
+    "production-apk": {
+      "autoIncrement": true,
+      "node": "18.18.2",
+      "env": {
+        "EXPO_IGNORE_PEER_DEPENDENCIES": "true"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
+
